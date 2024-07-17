@@ -19,21 +19,16 @@ class ViewController: UIViewController {
         return element
     }()
     
-    private lazy var registerButton: UIButton = {
-        var element = UIButton(type: .system)
-        element.titleLabel?.font = .systemFont(ofSize: 30)
-        element.setTitleColor(UIColor(named: K.BrandColors.blue), for: .normal)
-        element.backgroundColor = UIColor(named: K.BrandColors.lighBlue)
-        return element
-    }()
+    let registerButton = UIButton(
+        titleColor: UIColor(named: K.BrandColors.blue),
+        backgroundColor: UIColor(named: K.BrandColors.lighBlue)
+    )
     
-    private lazy var loginButton: UIButton = {
-        var element = UIButton(type: .system)
-        element.titleLabel?.font = .systemFont(ofSize: 30)
-        element.setTitleColor(UIColor(named: K.BrandColors.blue), for: .normal)
-        element.backgroundColor = UIColor(named: K.BrandColors.lighBlue)
-        return element
-    }()
+    let loginButton = UIButton(
+        titleColor: .white,
+        backgroundColor: .systemTeal
+    )
+
     
     
 // MARK: - LifeCycle
@@ -77,5 +72,14 @@ extension ViewController {
             make.height.equalTo(K.Size.buttonSize)
             make.bottom.equalTo(loginButton.snp.top).offset(-K.Size.buttonOffset)
         }
+    }
+}
+
+extension UIButton {
+    convenience init(titleColor: UIColor?, backgroundColor: UIColor? = .clear) {
+        self.init(type: .system)
+        self.titleLabel?.font = .systemFont(ofSize: 30)
+        self.setTitleColor(titleColor, for: .normal)
+        self.backgroundColor = backgroundColor
     }
 }
