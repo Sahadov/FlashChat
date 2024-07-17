@@ -9,7 +9,7 @@ import UIKit
 import SnapKit
 
 
-class ViewController: UIViewController {
+class WelcomeViewController: UIViewController {
 // MARK: - UI
     
     private lazy var titleLable: UILabel = {
@@ -49,13 +49,21 @@ class ViewController: UIViewController {
         titleLable.text = K.appName
         registerButton.setTitle(K.registerName, for: .normal)
         loginButton.setTitle(K.logInName, for: .normal)
+        
+        registerButton.addTarget(self, action: #selector(buttonsTapped), for: .touchUpInside)
+        loginButton.addTarget(self, action: #selector(buttonsTapped), for: .touchUpInside)
+    }
+    
+    @objc private func buttonsTapped(_ sender: UIButton){
+        let nextVC = RegisterViewController()
+        navigationController?.pushViewController(nextVC, animated: true)
     }
 }
 
 
 
 // MARK: - Setup Constraints
-extension ViewController {
+extension WelcomeViewController {
     private func setupConstraints(){
         titleLable.snp.makeConstraints { make in
             make.center.equalToSuperview()
