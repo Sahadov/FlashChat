@@ -1,15 +1,15 @@
 //
-//  RegisterViewController.swift
+//  ChatViewController.swift
 //  FlashChat
 //
-//  Created by Дмитрий Волков on 16.07.2024.
+//  Created by Дмитрий Волков on 18.07.2024.
 //
 
 import UIKit
 import SnapKit
 
 
-class RegisterViewController: UIViewController {
+class ChatViewController: UIViewController {
 // MARK: - UI
     
     
@@ -25,19 +25,11 @@ class RegisterViewController: UIViewController {
     
 // MARK: - Set views
     private func setViews(){
-        view.backgroundColor = .systemTeal
+        view.backgroundColor = .red
     }
     
-    @objc private func buttonsTapped(_ sender: UIButton){
-        
-    }
-}
-
-
-
-// MARK: - Setup Constraints
-extension RegisterViewController {
     private func setupConstraints(){
         
     }
+    
 }

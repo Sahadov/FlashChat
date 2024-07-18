@@ -54,9 +54,16 @@ class WelcomeViewController: UIViewController {
         loginButton.addTarget(self, action: #selector(buttonsTapped), for: .touchUpInside)
     }
     
-    @objc private func buttonsTapped(_ sender: UIButton){
-        let nextVC = RegisterViewController()
-        navigationController?.pushViewController(nextVC, animated: true)
+    @objc private func buttonsTapped(_ sender: UIButton) {
+            let nextVC = RegisterViewController()
+            
+            if sender.currentTitle == K.registerName {
+                nextVC.authorizationType = .register
+            } else if sender.currentTitle == K.logInName {
+                nextVC.authorizationType = .logIn
+            }
+            
+            navigationController?.pushViewController(nextVC, animated: true)
     }
 }
 

@@ -10,6 +10,7 @@
 		D1DFF5342C49833200D5D027 /* UIButton + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1DFF5332C49833200D5D027 /* UIButton + Extension.swift */; };
 		D1DFF5362C4983E100D5D027 /* UIView + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1DFF5352C4983E100D5D027 /* UIView + Extension.swift */; };
 		D1DFF5382C49842300D5D027 /* UITextField + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1DFF5372C49842300D5D027 /* UITextField + Extension.swift */; };
+		D1DFF53B2C4987D300D5D027 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1DFF53A2C4987D300D5D027 /* ChatViewController.swift */; };
 		D1F18E322C474CBE000F901A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F18E312C474CBE000F901A /* AppDelegate.swift */; };
 		D1F18E342C474CBE000F901A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F18E332C474CBE000F901A /* SceneDelegate.swift */; };
 		D1F18E362C474CBE000F901A /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F18E352C474CBE000F901A /* WelcomeViewController.swift */; };
@@ -24,6 +25,7 @@
 		D1DFF5332C49833200D5D027 /* UIButton + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton + Extension.swift"; sourceTree = "<group>"; };
 		D1DFF5352C4983E100D5D027 /* UIView + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView + Extension.swift"; sourceTree = "<group>"; };
 		D1DFF5372C49842300D5D027 /* UITextField + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField + Extension.swift"; sourceTree = "<group>"; };
+		D1DFF53A2C4987D300D5D027 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		D1F18E2E2C474CBE000F901A /* FlashChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlashChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1F18E312C474CBE000F901A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D1F18E332C474CBE000F901A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -58,6 +60,16 @@
 			path = Helpers;
 			sourceTree = "<group>";
 		};
+		D1DFF5392C4984A900D5D027 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D1F18E352C474CBE000F901A /* WelcomeViewController.swift */,
+				D1F18E4A2C475B71000F901A /* RegisterViewController.swift */,
+				D1DFF53A2C4987D300D5D027 /* ChatViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
 		D1F18E252C474CBE000F901A = {
 			isa = PBXGroup;
 			children = (
@@ -77,12 +89,11 @@
 		D1F18E302C474CBE000F901A /* FlashChat */ = {
 			isa = PBXGroup;
 			children = (
+				D1DFF5322C4982E700D5D027 /* Helpers */,
+				D1DFF5392C4984A900D5D027 /* Controllers */,
+				D1F18E3A2C474CC2000F901A /* Assets.xcassets */,
 				D1F18E312C474CBE000F901A /* AppDelegate.swift */,
 				D1F18E332C474CBE000F901A /* SceneDelegate.swift */,
-				D1DFF5322C4982E700D5D027 /* Helpers */,
-				D1F18E352C474CBE000F901A /* WelcomeViewController.swift */,
-				D1F18E4A2C475B71000F901A /* RegisterViewController.swift */,
-				D1F18E3A2C474CC2000F901A /* Assets.xcassets */,
 				D1F18E3C2C474CC2000F901A /* LaunchScreen.storyboard */,
 				D1F18E3F2C474CC2000F901A /* Info.plist */,
 			);
@@ -172,6 +183,7 @@
 				D1F18E342C474CBE000F901A /* SceneDelegate.swift in Sources */,
 				D1F18E462C474F9D000F901A /* Constants.swift in Sources */,
 				D1DFF5342C49833200D5D027 /* UIButton + Extension.swift in Sources */,
+				D1DFF53B2C4987D300D5D027 /* ChatViewController.swift in Sources */,
 				D1DFF5382C49842300D5D027 /* UITextField + Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
