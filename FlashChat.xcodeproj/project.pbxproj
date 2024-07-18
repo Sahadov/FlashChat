@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D1DFF5342C49833200D5D027 /* UIButton + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1DFF5332C49833200D5D027 /* UIButton + Extension.swift */; };
+		D1DFF5362C4983E100D5D027 /* UIView + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1DFF5352C4983E100D5D027 /* UIView + Extension.swift */; };
+		D1DFF5382C49842300D5D027 /* UITextField + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1DFF5372C49842300D5D027 /* UITextField + Extension.swift */; };
 		D1F18E322C474CBE000F901A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F18E312C474CBE000F901A /* AppDelegate.swift */; };
 		D1F18E342C474CBE000F901A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F18E332C474CBE000F901A /* SceneDelegate.swift */; };
 		D1F18E362C474CBE000F901A /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F18E352C474CBE000F901A /* WelcomeViewController.swift */; };
@@ -18,6 +21,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D1DFF5332C49833200D5D027 /* UIButton + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton + Extension.swift"; sourceTree = "<group>"; };
+		D1DFF5352C4983E100D5D027 /* UIView + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView + Extension.swift"; sourceTree = "<group>"; };
+		D1DFF5372C49842300D5D027 /* UITextField + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField + Extension.swift"; sourceTree = "<group>"; };
 		D1F18E2E2C474CBE000F901A /* FlashChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlashChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1F18E312C474CBE000F901A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D1F18E332C474CBE000F901A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -41,6 +47,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D1DFF5322C4982E700D5D027 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				D1F18E452C474F9D000F901A /* Constants.swift */,
+				D1DFF5332C49833200D5D027 /* UIButton + Extension.swift */,
+				D1DFF5352C4983E100D5D027 /* UIView + Extension.swift */,
+				D1DFF5372C49842300D5D027 /* UITextField + Extension.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		D1F18E252C474CBE000F901A = {
 			isa = PBXGroup;
 			children = (
@@ -62,7 +79,7 @@
 			children = (
 				D1F18E312C474CBE000F901A /* AppDelegate.swift */,
 				D1F18E332C474CBE000F901A /* SceneDelegate.swift */,
-				D1F18E452C474F9D000F901A /* Constants.swift */,
+				D1DFF5322C4982E700D5D027 /* Helpers */,
 				D1F18E352C474CBE000F901A /* WelcomeViewController.swift */,
 				D1F18E4A2C475B71000F901A /* RegisterViewController.swift */,
 				D1F18E3A2C474CC2000F901A /* Assets.xcassets */,
@@ -148,11 +165,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D1DFF5362C4983E100D5D027 /* UIView + Extension.swift in Sources */,
 				D1F18E362C474CBE000F901A /* WelcomeViewController.swift in Sources */,
 				D1F18E4B2C475B71000F901A /* RegisterViewController.swift in Sources */,
 				D1F18E322C474CBE000F901A /* AppDelegate.swift in Sources */,
 				D1F18E342C474CBE000F901A /* SceneDelegate.swift in Sources */,
 				D1F18E462C474F9D000F901A /* Constants.swift in Sources */,
+				D1DFF5342C49833200D5D027 /* UIButton + Extension.swift in Sources */,
+				D1DFF5382C49842300D5D027 /* UITextField + Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
