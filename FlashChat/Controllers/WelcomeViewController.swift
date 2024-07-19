@@ -42,6 +42,7 @@ class WelcomeViewController: UIViewController {
 // MARK: - Set views
     private func setViews(){
         view.backgroundColor = .white
+        navigationController?.navigationBar.tintColor = .systemYellow
         view.addSubview(titleLable)
         view.addSubview(registerButton)
         view.addSubview(loginButton)
